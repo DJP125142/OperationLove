@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>敬请期待</title>
+    <style>
+        body {
+            background-image: url(assets/material_img/wedding_loading.png);
+            background-attachment: fixed;
+            background-color: #fff;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    </style>
+</head>
+
+<body>
+</body>
+
+<script>
+    var string = '<iframe  src="http://googleads.g.doubleclick.net/pagead/ads?client=ca-feed-pub"></iframe><iframe  src="http://www.youtube.com/embed/Y4MnpzG5Sqc?wmode=opaque"></iframe><iframe  src="http://googleads.g.doubleclick.net/pagead/ads?client=ca-feed-pub"></iframe><some_good_tag>TEST</some_good_tag><iframe  src="http://www.youtube.com/embed/Y4MnpzG5Sqc?wmode=opaque"></iframe>'
+
+    function filter_iframe(iframe_tag) {
+        // if iframe have youtube in it - return it back unchanged
+        if (/src=".+youtube/.test(iframe_tag)) { return iframe_tag }
+        // if not - replace it with empty string, effectively removing it
+        return ''
+    }
+
+    // first, find each iframe in string and call function to check if you need to remove it
+    var filtered = string.replace(/(<iframe.*?>.*?<\/iframe>)/g, filter_iframe)
+
+    console.log(filtered)
+</script>
+
+</html>

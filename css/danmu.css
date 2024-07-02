@@ -1,0 +1,126 @@
+/* * {
+    padding:0;
+    margin:0;
+    list-style: none;
+    text-decoration: none;
+} */
+#bg_box {
+    /*background-color: #000000;*/
+    position: absolute;
+    width: 1280px;
+    height: 200px;
+    margin: 0 auto;
+    margin-top: 15px;
+    color: #ffffff;
+    z-index: 9999999;
+}
+
+#dm_container {
+    position: absolute;
+    /*background-color: #000000;*/
+    width: 1280px;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 15px;
+    color: #ffffff;
+    overflow: hidden;
+}
+
+.danmu {
+    display: block;
+    width: 100%;
+    text-align: right;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
+#sent {
+    width: 898px;
+    height: 70px;
+    margin: 0 auto;
+    background: #ffffff;
+    /*border-style:inset;*/
+    /*border: 1px solid #d5d5d5;*/
+    /*border-top:none;*/
+    /*box-shadow:-2px 0  #dddddd,*/
+    /*2px 0  #dddddd,*/
+    /*0 2px  #dddddd;*/
+    position: absolute;
+    top: 360px;
+    left: 25%;
+}
+
+#bless {
+    width: 498px;
+    height: 32px;
+    margin: 20px 0px 20px 10px;
+    border: 1px solid #d5d5d5;
+    color: #6e6e6e;
+}
+
+#send {
+    display: none;
+    margin: 20px;
+    line-height: 30px;
+    color: #ffffff;
+    border: none;
+    background: #00A2D6;
+    padding: 0px 15px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#dw {
+    position: absolute;
+    left: 400px;
+    top: 27px;
+    font-size: 14px;
+    color: #6e6e6e;
+}
+
+#send_bless {
+    display: none;
+    position: relative;
+}
+
+#rr {
+    line-height: 30px;
+    color: #ffffff;
+    border: none;
+    background: #006600;
+    padding: 0px 15px;
+    text-align: center;
+    cursor: pointer;
+}
+
+span {
+    color: #ffa178;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+input {
+    background: #ffffff;
+    color: #3c3c3c;
+    border: 1px solid #d5d5d5;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 30px;
+    outline: none;
+}
+
+.colorDiv ul.colorDivUl li p.name,
+.colorDiv ul.colorDivUl li .fontSizeDiv,
+.colorDiv ul.colorDivUl li .fontSizeDiv a,
+.colorDiv ul.colorDivUl li .backColorDiv,
+.colorDiv ul.colorDivUl li .backColorDiv p.backColor,
+.colorDiv ul.colorDivUl li .backColorDiv p.colorText,
+.colorDiv ul.colorDivUl li .backColorDiv .colorDivs a,
+a.colorHint {
+    float: left;
+}
+
+.clear {
+    clear: both;
+}
